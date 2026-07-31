@@ -1,0 +1,655 @@
+{
+  "category": "economics",
+  "questions": [
+    {
+      "id": "economics_001",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which planet is known as the Red Planet?",
+      "answer": "Mars",
+      "options": null,
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "economics_002",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the chemical symbol for water?",
+      "answer": "H2O",
+      "options": null,
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_003",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which element has the atomic number 1?",
+      "answer": "Hydrogen",
+      "options": null,
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_004",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the largest ocean on Earth?",
+      "answer": "Pacific Ocean",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_005",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which continent has the largest population?",
+      "answer": "Asia",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_006",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the fastest land animal?",
+      "answer": "Cheetah",
+      "options": null,
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_007",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "answer": "William Shakespeare",
+      "options": null,
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "economics_008",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the powerhouse of the cell?",
+      "answer": "Mitochondria",
+      "options": null,
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_009",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the square root of 144?",
+      "answer": "12",
+      "options": null,
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "economics_010",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which gas do plants produce during photosynthesis?",
+      "answer": "Oxygen",
+      "options": null,
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_011",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which planet is known as the Red Planet? ?",
+      "answer": "Mars",
+      "options": [
+        "Moscow",
+        "Mars",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "economics_012",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the chemical symbol for water? ?",
+      "answer": "H2O",
+      "options": [
+        "H2O",
+        "Berlin",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_013",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which element has the atomic number 1? ?",
+      "answer": "Hydrogen",
+      "options": [
+        "Moscow",
+        "Hydrogen",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_014",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the largest ocean on Earth? ?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Pacific Ocean",
+        "Moscow",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_015",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which continent has the largest population? ?",
+      "answer": "Asia",
+      "options": [
+        "London",
+        "Asia",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_016",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the fastest land animal? ?",
+      "answer": "Cheetah",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Cheetah",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_017",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who wrote 'Romeo and Juliet'? ?",
+      "answer": "William Shakespeare",
+      "options": [
+        "London",
+        "Moscow",
+        "William Shakespeare",
+        "Berlin"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "economics_018",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the powerhouse of the cell? ?",
+      "answer": "Mitochondria",
+      "options": [
+        "London",
+        "Moscow",
+        "Berlin",
+        "Mitochondria"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_019",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the square root of 144? ?",
+      "answer": "12",
+      "options": [
+        "Berlin",
+        "Berlin",
+        "12",
+        "Berlin"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "economics_020",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which gas do plants produce during photosynthesis? ?",
+      "answer": "Oxygen",
+      "options": [
+        "London",
+        "Oxygen",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_021",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which planet is known as the Red Planet? ?",
+      "answer": "Mars",
+      "options": [
+        "Mars",
+        "Berlin",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "economics_022",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the chemical symbol for water? ?",
+      "answer": "H2O",
+      "options": [
+        "London",
+        "Berlin",
+        "Moscow",
+        "H2O"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_023",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which element has the atomic number 1? ?",
+      "answer": "Hydrogen",
+      "options": [
+        "Moscow",
+        "Hydrogen",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_024",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the largest ocean on Earth? ?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "London",
+        "Pacific Ocean"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_025",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which continent has the largest population? ?",
+      "answer": "Asia",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Asia",
+        "London"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_026",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the fastest land animal? ?",
+      "answer": "Cheetah",
+      "options": [
+        "Berlin",
+        "Cheetah",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_027",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who wrote 'Romeo and Juliet'? ?",
+      "answer": "William Shakespeare",
+      "options": [
+        "London",
+        "Berlin",
+        "William Shakespeare",
+        "Moscow"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "economics_028",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the powerhouse of the cell? ?",
+      "answer": "Mitochondria",
+      "options": [
+        "London",
+        "Mitochondria",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_029",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the square root of 144? ?",
+      "answer": "12",
+      "options": [
+        "Berlin",
+        "Berlin",
+        "Berlin",
+        "12"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "economics_030",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which gas do plants produce during photosynthesis? ?",
+      "answer": "Oxygen",
+      "options": [
+        "Berlin",
+        "Oxygen",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_031",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes astronomy?",
+      "answer": "Mars",
+      "options": [
+        "Moscow",
+        "Mars",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "economics_032",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "H2O",
+      "options": [
+        "H2O",
+        "Berlin",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_033",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "Hydrogen",
+      "options": [
+        "London",
+        "Hydrogen",
+        "Moscow",
+        "Berlin"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_034",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Moscow",
+        "London",
+        "Berlin",
+        "Pacific Ocean"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_035",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Asia",
+      "options": [
+        "Moscow",
+        "London",
+        "Berlin",
+        "Asia"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_036",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Cheetah",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Cheetah"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_037",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes literature?",
+      "answer": "William Shakespeare",
+      "options": [
+        "Moscow",
+        "William Shakespeare",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "economics_038",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Mitochondria",
+      "options": [
+        "Moscow",
+        "London",
+        "Mitochondria",
+        "Berlin"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_039",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes mathematics?",
+      "answer": "12",
+      "options": [
+        "Berlin",
+        "Berlin",
+        "Berlin",
+        "12"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "economics_040",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Oxygen",
+      "options": [
+        "Oxygen",
+        "London",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_041",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes astronomy?",
+      "answer": "Mars",
+      "options": [
+        "London",
+        "Berlin",
+        "Moscow",
+        "Mars"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "economics_042",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "H2O",
+      "options": [
+        "H2O",
+        "Berlin",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_043",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "Hydrogen",
+      "options": [
+        "Hydrogen",
+        "Berlin",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "economics_044",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Pacific Ocean",
+        "London",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_045",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Asia",
+      "options": [
+        "Berlin",
+        "Asia",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "economics_046",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Cheetah",
+      "options": [
+        "London",
+        "Berlin",
+        "Cheetah",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_047",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes literature?",
+      "answer": "William Shakespeare",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "William Shakespeare"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "economics_048",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Mitochondria",
+      "options": [
+        "Berlin",
+        "Mitochondria",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "economics_049",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes mathematics?",
+      "answer": "12",
+      "options": [
+        "Berlin",
+        "12",
+        "Berlin",
+        "Berlin"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "economics_050",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Oxygen",
+      "options": [
+        "Oxygen",
+        "Moscow",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    }
+  ]
+}

@@ -1,0 +1,655 @@
+{
+  "category": "geography_world",
+  "questions": [
+    {
+      "id": "geography_world_001",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which planet is known as the Red Planet?",
+      "answer": "Mars",
+      "options": null,
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "geography_world_002",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the chemical symbol for water?",
+      "answer": "H2O",
+      "options": null,
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_003",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which element has the atomic number 1?",
+      "answer": "Hydrogen",
+      "options": null,
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_004",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the largest ocean on Earth?",
+      "answer": "Pacific Ocean",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_005",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which continent has the largest population?",
+      "answer": "Asia",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_006",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the fastest land animal?",
+      "answer": "Cheetah",
+      "options": null,
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_007",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Who wrote 'Romeo and Juliet'?",
+      "answer": "William Shakespeare",
+      "options": null,
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "geography_world_008",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the powerhouse of the cell?",
+      "answer": "Mitochondria",
+      "options": null,
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_009",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the square root of 144?",
+      "answer": "12",
+      "options": null,
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "geography_world_010",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which gas do plants produce during photosynthesis?",
+      "answer": "Oxygen",
+      "options": null,
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_011",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which planet is known as the Red Planet? ?",
+      "answer": "Mars",
+      "options": [
+        "London",
+        "Berlin",
+        "Mars",
+        "Moscow"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "geography_world_012",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the chemical symbol for water? ?",
+      "answer": "H2O",
+      "options": [
+        "London",
+        "Moscow",
+        "Berlin",
+        "H2O"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_013",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which element has the atomic number 1? ?",
+      "answer": "Hydrogen",
+      "options": [
+        "Hydrogen",
+        "Moscow",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_014",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the largest ocean on Earth? ?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Moscow",
+        "London",
+        "Pacific Ocean",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_015",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which continent has the largest population? ?",
+      "answer": "Asia",
+      "options": [
+        "Moscow",
+        "London",
+        "Asia",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_016",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the fastest land animal? ?",
+      "answer": "Cheetah",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Cheetah",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_017",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who wrote 'Romeo and Juliet'? ?",
+      "answer": "William Shakespeare",
+      "options": [
+        "London",
+        "Berlin",
+        "Moscow",
+        "William Shakespeare"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "geography_world_018",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the powerhouse of the cell? ?",
+      "answer": "Mitochondria",
+      "options": [
+        "Berlin",
+        "London",
+        "Moscow",
+        "Mitochondria"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_019",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the square root of 144? ?",
+      "answer": "12",
+      "options": [
+        "Berlin",
+        "12",
+        "Berlin",
+        "Berlin"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "geography_world_020",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which gas do plants produce during photosynthesis? ?",
+      "answer": "Oxygen",
+      "options": [
+        "Oxygen",
+        "Berlin",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_021",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which planet is known as the Red Planet? ?",
+      "answer": "Mars",
+      "options": [
+        "Mars",
+        "Berlin",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "geography_world_022",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the chemical symbol for water? ?",
+      "answer": "H2O",
+      "options": [
+        "London",
+        "Moscow",
+        "H2O",
+        "Berlin"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_023",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which element has the atomic number 1? ?",
+      "answer": "Hydrogen",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Hydrogen"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_024",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the largest ocean on Earth? ?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "London",
+        "Pacific Ocean",
+        "Moscow",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_025",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which continent has the largest population? ?",
+      "answer": "Asia",
+      "options": [
+        "Berlin",
+        "Asia",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_026",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the fastest land animal? ?",
+      "answer": "Cheetah",
+      "options": [
+        "Moscow",
+        "London",
+        "Berlin",
+        "Cheetah"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_027",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who wrote 'Romeo and Juliet'? ?",
+      "answer": "William Shakespeare",
+      "options": [
+        "London",
+        "Moscow",
+        "William Shakespeare",
+        "Berlin"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "geography_world_028",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the powerhouse of the cell? ?",
+      "answer": "Mitochondria",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Mitochondria",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_029",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the square root of 144? ?",
+      "answer": "12",
+      "options": [
+        "12",
+        "Berlin",
+        "Berlin",
+        "Berlin"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "geography_world_030",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which gas do plants produce during photosynthesis? ?",
+      "answer": "Oxygen",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "Oxygen",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_031",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes astronomy?",
+      "answer": "Mars",
+      "options": [
+        "Berlin",
+        "London",
+        "Mars",
+        "Moscow"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "geography_world_032",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "H2O",
+      "options": [
+        "Moscow",
+        "H2O",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_033",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "Hydrogen",
+      "options": [
+        "Berlin",
+        "London",
+        "Moscow",
+        "Hydrogen"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_034",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "London",
+        "Pacific Ocean"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_035",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Asia",
+      "options": [
+        "Moscow",
+        "Asia",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_036",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Cheetah",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Cheetah"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_037",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes literature?",
+      "answer": "William Shakespeare",
+      "options": [
+        "Berlin",
+        "London",
+        "Moscow",
+        "William Shakespeare"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "geography_world_038",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Mitochondria",
+      "options": [
+        "Mitochondria",
+        "Moscow",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_039",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes mathematics?",
+      "answer": "12",
+      "options": [
+        "12",
+        "Berlin",
+        "Berlin",
+        "Berlin"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "geography_world_040",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Oxygen",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Oxygen",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_041",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes astronomy?",
+      "answer": "Mars",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Mars",
+        "London"
+      ],
+      "notes": "Topic: astronomy"
+    },
+    {
+      "id": "geography_world_042",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "H2O",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "H2O",
+        "London"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_043",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes chemistry?",
+      "answer": "Hydrogen",
+      "options": [
+        "London",
+        "Moscow",
+        "Hydrogen",
+        "Berlin"
+      ],
+      "notes": "Topic: chemistry"
+    },
+    {
+      "id": "geography_world_044",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Pacific Ocean",
+      "options": [
+        "Pacific Ocean",
+        "London",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_045",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Asia",
+      "options": [
+        "London",
+        "Berlin",
+        "Moscow",
+        "Asia"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "geography_world_046",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Cheetah",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Cheetah",
+        "London"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_047",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes literature?",
+      "answer": "William Shakespeare",
+      "options": [
+        "William Shakespeare",
+        "Berlin",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: literature"
+    },
+    {
+      "id": "geography_world_048",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Mitochondria",
+      "options": [
+        "London",
+        "Berlin",
+        "Mitochondria",
+        "Moscow"
+      ],
+      "notes": "Topic: biology"
+    },
+    {
+      "id": "geography_world_049",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes mathematics?",
+      "answer": "12",
+      "options": [
+        "Berlin",
+        "Berlin",
+        "Berlin",
+        "12"
+      ],
+      "notes": "Topic: mathematics"
+    },
+    {
+      "id": "geography_world_050",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes biology?",
+      "answer": "Oxygen",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Oxygen"
+      ],
+      "notes": "Topic: biology"
+    }
+  ]
+}

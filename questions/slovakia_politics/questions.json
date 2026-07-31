@@ -1,0 +1,655 @@
+{
+  "category": "slovakia_politics",
+  "questions": [
+    {
+      "id": "slovakia_politics_001",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the capital of Slovakia?",
+      "answer": "Bratislava",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_002",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the official language of Slovakia?",
+      "answer": "Slovak",
+      "options": null,
+      "notes": "Topic: language"
+    },
+    {
+      "id": "slovakia_politics_003",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "When did Slovakia become independent?",
+      "answer": "1993",
+      "options": null,
+      "notes": "Topic: history"
+    },
+    {
+      "id": "slovakia_politics_004",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What currency does Slovakia use?",
+      "answer": "Euro",
+      "options": null,
+      "notes": "Topic: economy"
+    },
+    {
+      "id": "slovakia_politics_005",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the national day of Slovakia?",
+      "answer": "January 1",
+      "options": null,
+      "notes": "Topic: culture"
+    },
+    {
+      "id": "slovakia_politics_006",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Which mountain range is most of Slovakia's high peaks located in?",
+      "answer": "Tatra Mountains",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_007",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the longest river that flows through Slovakia?",
+      "answer": "Danube",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_008",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the second largest city in Slovakia?",
+      "answer": "Košice",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_009",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "What is the highest mountain peak in Slovakia?",
+      "answer": "Gerlachovský štít",
+      "options": null,
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_010",
+      "type": "write_in",
+      "difficulty": "easy",
+      "question": "Who is the current Prime Minister of Slovakia?",
+      "answer": "Robert Fico",
+      "options": null,
+      "notes": "Topic: politics"
+    },
+    {
+      "id": "slovakia_politics_011",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the capital of Slovakia? ?",
+      "answer": "Bratislava",
+      "options": [
+        "Moscow",
+        "London",
+        "Bratislava",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_012",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the official language of Slovakia? ?",
+      "answer": "Slovak",
+      "options": [
+        "Moscow",
+        "Slovak",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: language"
+    },
+    {
+      "id": "slovakia_politics_013",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "When did Slovakia become independent? ?",
+      "answer": "1993",
+      "options": [
+        "1993",
+        "Tokyo",
+        "Tokyo",
+        "Tokyo"
+      ],
+      "notes": "Topic: history"
+    },
+    {
+      "id": "slovakia_politics_014",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What currency does Slovakia use? ?",
+      "answer": "Euro",
+      "options": [
+        "Moscow",
+        "Euro",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: economy"
+    },
+    {
+      "id": "slovakia_politics_015",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the national day of Slovakia? ?",
+      "answer": "January 1",
+      "options": [
+        "Moscow",
+        "January 1",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: culture"
+    },
+    {
+      "id": "slovakia_politics_016",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which mountain range is most of Slovakia's high peaks located in? ?",
+      "answer": "Tatra Mountains",
+      "options": [
+        "Tatra Mountains",
+        "London",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_017",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the longest river that flows through Slovakia? ?",
+      "answer": "Danube",
+      "options": [
+        "London",
+        "Danube",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_018",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the second largest city in Slovakia? ?",
+      "answer": "Košice",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Košice"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_019",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the highest mountain peak in Slovakia? ?",
+      "answer": "Gerlachovský štít",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Gerlachovský štít"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_020",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who is the current Prime Minister of Slovakia? ?",
+      "answer": "Robert Fico",
+      "options": [
+        "London",
+        "Berlin",
+        "Moscow",
+        "Robert Fico"
+      ],
+      "notes": "Topic: politics"
+    },
+    {
+      "id": "slovakia_politics_021",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the capital of Slovakia? ?",
+      "answer": "Bratislava",
+      "options": [
+        "London",
+        "Bratislava",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_022",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the official language of Slovakia? ?",
+      "answer": "Slovak",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "London",
+        "Slovak"
+      ],
+      "notes": "Topic: language"
+    },
+    {
+      "id": "slovakia_politics_023",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "When did Slovakia become independent? ?",
+      "answer": "1993",
+      "options": [
+        "Tokyo",
+        "Tokyo",
+        "Tokyo",
+        "1993"
+      ],
+      "notes": "Topic: history"
+    },
+    {
+      "id": "slovakia_politics_024",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What currency does Slovakia use? ?",
+      "answer": "Euro",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Euro"
+      ],
+      "notes": "Topic: economy"
+    },
+    {
+      "id": "slovakia_politics_025",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the national day of Slovakia? ?",
+      "answer": "January 1",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "January 1",
+        "London"
+      ],
+      "notes": "Topic: culture"
+    },
+    {
+      "id": "slovakia_politics_026",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Which mountain range is most of Slovakia's high peaks located in? ?",
+      "answer": "Tatra Mountains",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "Tatra Mountains",
+        "London"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_027",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the longest river that flows through Slovakia? ?",
+      "answer": "Danube",
+      "options": [
+        "Danube",
+        "London",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_028",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the second largest city in Slovakia? ?",
+      "answer": "Košice",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "London",
+        "Košice"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_029",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "What is the highest mountain peak in Slovakia? ?",
+      "answer": "Gerlachovský štít",
+      "options": [
+        "Gerlachovský štít",
+        "Berlin",
+        "London",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_030",
+      "type": "multiple_choice",
+      "difficulty": "intermediate",
+      "question": "Who is the current Prime Minister of Slovakia? ?",
+      "answer": "Robert Fico",
+      "options": [
+        "London",
+        "Robert Fico",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: politics"
+    },
+    {
+      "id": "slovakia_politics_031",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Bratislava",
+      "options": [
+        "London",
+        "Berlin",
+        "Bratislava",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_032",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes language?",
+      "answer": "Slovak",
+      "options": [
+        "London",
+        "Berlin",
+        "Moscow",
+        "Slovak"
+      ],
+      "notes": "Topic: language"
+    },
+    {
+      "id": "slovakia_politics_033",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes history?",
+      "answer": "1993",
+      "options": [
+        "1993",
+        "Tokyo",
+        "Tokyo",
+        "Tokyo"
+      ],
+      "notes": "Topic: history"
+    },
+    {
+      "id": "slovakia_politics_034",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes economy?",
+      "answer": "Euro",
+      "options": [
+        "Euro",
+        "Berlin",
+        "Moscow",
+        "London"
+      ],
+      "notes": "Topic: economy"
+    },
+    {
+      "id": "slovakia_politics_035",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes culture?",
+      "answer": "January 1",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "January 1",
+        "London"
+      ],
+      "notes": "Topic: culture"
+    },
+    {
+      "id": "slovakia_politics_036",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Tatra Mountains",
+      "options": [
+        "Berlin",
+        "Moscow",
+        "Tatra Mountains",
+        "London"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_037",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Danube",
+      "options": [
+        "Moscow",
+        "Danube",
+        "London",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_038",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Košice",
+      "options": [
+        "London",
+        "Moscow",
+        "Berlin",
+        "Košice"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_039",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Gerlachovský štít",
+      "options": [
+        "London",
+        "Gerlachovský štít",
+        "Moscow",
+        "Berlin"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_040",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes politics?",
+      "answer": "Robert Fico",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Robert Fico",
+        "London"
+      ],
+      "notes": "Topic: politics"
+    },
+    {
+      "id": "slovakia_politics_041",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Bratislava",
+      "options": [
+        "London",
+        "Berlin",
+        "Bratislava",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_042",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes language?",
+      "answer": "Slovak",
+      "options": [
+        "London",
+        "Slovak",
+        "Berlin",
+        "Moscow"
+      ],
+      "notes": "Topic: language"
+    },
+    {
+      "id": "slovakia_politics_043",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes history?",
+      "answer": "1993",
+      "options": [
+        "1993",
+        "Tokyo",
+        "Tokyo",
+        "Tokyo"
+      ],
+      "notes": "Topic: history"
+    },
+    {
+      "id": "slovakia_politics_044",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes economy?",
+      "answer": "Euro",
+      "options": [
+        "Moscow",
+        "Euro",
+        "Berlin",
+        "London"
+      ],
+      "notes": "Topic: economy"
+    },
+    {
+      "id": "slovakia_politics_045",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes culture?",
+      "answer": "January 1",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "January 1",
+        "London"
+      ],
+      "notes": "Topic: culture"
+    },
+    {
+      "id": "slovakia_politics_046",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Tatra Mountains",
+      "options": [
+        "London",
+        "Moscow",
+        "Berlin",
+        "Tatra Mountains"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_047",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Danube",
+      "options": [
+        "London",
+        "Berlin",
+        "Danube",
+        "Moscow"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_048",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Košice",
+      "options": [
+        "London",
+        "Moscow",
+        "Berlin",
+        "Košice"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_049",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes geography?",
+      "answer": "Gerlachovský štít",
+      "options": [
+        "Moscow",
+        "Berlin",
+        "Gerlachovský štít",
+        "London"
+      ],
+      "notes": "Topic: geography"
+    },
+    {
+      "id": "slovakia_politics_050",
+      "type": "multiple_choice",
+      "difficulty": "hard",
+      "question": "Which of the following best describes politics?",
+      "answer": "Robert Fico",
+      "options": [
+        "London",
+        "Moscow",
+        "Robert Fico",
+        "Berlin"
+      ],
+      "notes": "Topic: politics"
+    }
+  ]
+}
