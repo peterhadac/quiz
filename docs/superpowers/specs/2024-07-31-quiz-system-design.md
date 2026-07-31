@@ -17,8 +17,6 @@ A quiz builder web application for creating category-based quizzes with question
 
 ```
 quiz/
-├── categories/
-│   └── categories.txt                    # One category name per line, source of truth
 ├── questions/
 │   ├── geography/
 │   │   └── questions.json               # Structured JSON: all geography questions
@@ -29,13 +27,13 @@ quiz/
 │   └── 2024-08-01/
 │       └── quiz.md                       # Generated quiz (commit & push updates History tab)
 ├── astro-site/
-│   ├── astro.config.mjs                 # static output mode
-│   ├── package.json
+│   ├── astro.config.mjs                 # Astro config with React integration
+│   ├── package.json                     # Runtime dependencies + dev deps
 │   ├── src/
 │   │   ├── config/colors.ts             # Design tokens
 │   │   ├── data/
 │   │   │   ├── questions.ts             # Parse JSON files → questionIndex (build-time)
-│   │   │   └── categories.ts            # Read categories.txt at build time
+│   │   │   └── categories.ts            # Derive categories from questions/ dirs (build-time)
 │   │   ├── types/question.ts            # TypeScript interfaces
 │   │   ├── stores/quizStore.ts          # IndexedDB-backed quiz state
 │   │   ├── components/
@@ -44,7 +42,7 @@ quiz/
 │   │   │   ├── PreviewView.astro        # Tab 3: render markdown, PDF export
 │   │   │   ├── HistoryView.astro        # Tab 4: view past quizzes (from committed dates/)
 │   │   │   └── Navigation.astro         # Tab bar
-│   │   └── pages/index.astro            # SPA router, 4 tabs
+│   │   └── pages/index.astro            # SPA router, 4 tabs (hash-based)
 │   └── public/app.css
 ├── .github/workflows/deploy.yml
 └── README.md
@@ -95,6 +93,36 @@ quiz/
 3. User moves file to `dates/2024-08-01/quiz.md` and commits to git
 4. Push to main triggers build → History tab includes the quiz
 
+### 2.2.1 Astro Config
+
+```js
+// astro.config.mjs
+import { defineConfig } from 'astro/config';
+import react from '@astrojs/react';
+
+export default defineConfig({
+  integrations: [react()],
+});
+```
+- Uses React islands integration for interactive tab views
+- Static output mode (no adapter, no server runtime)
+
+### 2.2.2 Tab Routing
+
+Hash-based routing (`#library`, `#builder`, `#preview`, `#history`). Works in static sites, no server needed. Astro renders all 4 views on one page; JS visibility toggling per hash. Browser URL and back-button work naturally.
+
+### 2.2.3 Dependencies
+
+| Package | Purpose |
+|---------|---------|
+| `astro` | Static site framework |
+| `@astrojs/react` | React islands integration |
+| `react`, `react-dom` | UI library |
+| `marked` (v5) | Client-side markdown rendering |
+| `idb` | IndexedDB wrapper (800 bytes) |
+| `html2pdf.js` | Client-side PDF generation |
+| `@types/react`, `@types/react-dom` | TypeScript types |
+
 ## 3. Interfaces
 
 ### 3.1 Question JSON (input)
@@ -125,7 +153,7 @@ quiz/
 ```
 
 **Fields:**
-- `category` (string): matches folder name
+- `category` (string): folder name (e.g., `geography`, `history`)
 - `questions` (array): list of question objects
 - `question[].id` (string): globally unique identifier (validated at build time)
 - `question[].type` (string): `"multiple_choice"` or `"write_in"`
@@ -207,6 +235,22 @@ interface QuestionRef {
 quiz_sessions: JSON string of Map<sessionId, QuizSession>
 ```
 
+### 3.5 quizStore Interface (stores/quizStore.ts)
+
+Abstracts IndexedDB via the `idb` wrapper (800 bytes). Provides Promise-based API:
+
+```ts
+interface QuizStore {
+  saveSession(session: QuizSession): Promise<void>;
+  getSession(id: string): Promise<QuizSession | null>;
+  getAllSessions(): Promise<QuizSession[]>;
+  deleteSession(id: string): Promise<void>;
+  addQuestionToSession(sessionId: string, question: QuestionRef, order: number): Promise<void>;
+  reorderQuestions(sessionId: string, questionIds: string[]): Promise<void>;
+  removeQuestionFromSession(sessionId: string, questionId: string): Promise<void>;
+}
+```
+
 ## 4. UI Tabs
 
 ### 4.1 Library Tab
@@ -229,7 +273,7 @@ Purpose: Build a quiz session by selecting, arranging, and exporting questions.
 
 Components:
 - `QuestionQueue` (desktop right panel, mobile bottom section): Selected questions in order, draggable to reorder (desktop), tap to reorder (mobile).
-- `DateInput`: Date picker (ISO format: YYYY-MM-DD). Default: tomorrow.
+- `DateInput`: Native `<input type="date">` (zero deps). ISO format: YYYY-MM-DD. Default: tomorrow.
 - `SessionManager`: Name quiz, save (to IndexedDB), load existing session, delete session.
 - `PreviewInline`: Live preview of selected questions as they're added (markdown preview).
 - `ExportActions`:
@@ -237,6 +281,14 @@ Components:
   - "Copy to Clipboard" button → copies markdown to clipboard, shows success toast
   - "Export PDF" button → generates PDF via html2pdf.js, triggers download
 - `InfoBanner` (post-export): After export, shows "What's next?" steps clearly.
+  ```
+  ✅ Quiz export successful!
+  Next:
+    1. Move file to: dates/2024-08-01/quiz.md
+    2. git add dates/ && git commit -m "Quiz quiz"
+    3. git push
+  [Copy Path] [Got it!]
+  ```
 - `MobileNav`: Collapsible drawer on mobile (instead of sidebar), bottom sticky export bar.
 
 Behavior:
@@ -250,7 +302,7 @@ Behavior:
 Purpose: Render a quiz in human-readable format (from pasted/loaded content).
 
 Components:
-- `MarkdownRenderer`: Client-side markdown-to-HTML using `marked` or `remark`.
+- `MarkdownRenderer`: Client-side markdown-to-HTML using `marked` (v5, tree-sitter-based, fast).
 - `PDFExport`: Button to download current view as PDF via html2pdf.js.
 - `AddToBuilder`: Button to add current preview to Builder tab.
 
@@ -269,9 +321,13 @@ Components:
 - `QuizViewer`: Full view of a past quiz (rendered markdown).
 
 Behavior:
-- Built at build time: `dates/` folder data embedded in static file
-- No runtime writes — only committed quizzes appear here
-- Historical record is immutable
+- Built at build time: uses Astro `Astro.glob('dates/**/*.md')` to read all files and embed content at build time. No API route needed.
+```ts
+// In HistoryView.astro (client-side)
+import.meta.glob('dates/**/*.md', { query: '?raw' })
+// → each file's markdown content available at runtime
+```
+- Historical record is immutable.
 
 ## 5. Color Palette & Design
 
@@ -340,7 +396,7 @@ At load time (UI):
 |----------|-----------|
 | JSON parse error | Fail build, clear error message shows filename and reason |
 | Duplicate ID | Fail build, shows which ID and files are affected |
-| Missing `categories.txt` | Build fails, clear error message |
+| Missing `questions/` folder | Build fails, clear error message |
 | IndexedDB error | Show "Offline mode" fallback, suggest localStorage or manual backup |
 | Clipboard API unavailable (non-HTTPS, old browsers) | Fallback: download file instead of copy |
 | html2pdf.js fails during generation | Show error toast, offer to copy markdown instead |
@@ -480,3 +536,28 @@ cd astro-site && npm run build
 5. **Export works** — download `.md`, copy to clipboard, PDF download all function on HTTPS
 6. **History reflects repo state** — committed quizzes appear in History tab after build
 7. **Self-documenting** — README covers workflow, UI has post-export instructions
+
+## 13. Testing Strategy
+
+### Unit tests (Vitest, built into Astro)
+- **JSON parser:** Valid JSON loads correctly, malformed JSON throws error, missing required fields (`id`, `question`, `type`, `answer`) throws error.
+- **ID validator:** Collects all IDs across all files, detects duplicates, produces correct error message with file names.
+- **Markdown renderer:** `marked()` parses quiz markdown correctly, special characters escape safely.
+
+### E2E test (Playwright)
+- **Full builder flow:** Select 3 questions from different categories → reorder → set date → export → verify file download contains correct markdown → verify file name.
+- **History flow:** Create a quiz file in `dates/` dir → refresh → verify it appears in History tab with correct date and question count.
+
+## 14. README Content Outline
+
+- `README.md` structure:
+  - `# Quiz Builder`
+  - `## Quick Start — 3 steps to run a quiz`
+  - `## How to Create a Quiz` (export flow from UI)
+  - `## How to View Past Quizzes` (commit & push to see in History tab)
+  - `## How to Add a Category` (create folder, add questions.json, push)
+  - `## How to Add a Question` (JSON structure)
+  - `## How to Remove a Question`
+  - `## GitHub Pages Deployment` (automated on push)
+  - `## Project Structure` (brief file tree)
+  - `## Contributing` (question format, validation)
