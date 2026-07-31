@@ -1,0 +1,31 @@
+# Dependency directories
+node_modules/
+astro-site/node_modules/
+
+# Build output
+dist/
+astro-site/dist/
+.build/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+# OpenCode
+.agents/
+.claude/
+.opencode/
+skills-lock.json
+*.planning
+
+# OS
+.DS_Store
+
+# Coverage
+coverage/

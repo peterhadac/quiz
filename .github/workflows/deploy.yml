@@ -1,0 +1,68 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'astro-site/**'
+      - 'questions/**'
+      - 'dates/**'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate JSON structure
+        run: |
+          find questions -name "questions.json" -print0 2>/dev/null | while IFS= read -r -d '' file; do
+            jq . "$file" > /dev/null || { echo "Invalid JSON: $file"; exit 1; }
+            jq -e '.id and .question and .type and .answer' "$file" > /dev/null || { echo "Missing required fields in: $file"; exit 1; }
+          done || true
+
+      - name: Validate unique IDs
+        run: |
+          find questions -name "questions.json" -print0 2>/dev/null | while IFS= read -r -d '' file; do
+            jq -r '.questions[].id' "$file"
+          done | sort | uniq -d | if read -r dup; then
+            echo "Duplicate question ID found: $dup"
+            exit 1
+          fi
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        working-directory: astro-site
+        run: npm ci
+
+      - name: Build Astro site
+        working-directory: astro-site
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: astro-site/dist/
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
