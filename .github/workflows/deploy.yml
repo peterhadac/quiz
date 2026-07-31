@@ -27,7 +27,7 @@ jobs:
         run: |
           find questions -name "questions.json" -print0 2>/dev/null | while IFS= read -r -d '' file; do
             jq . "$file" > /dev/null || { echo "Invalid JSON: $file"; exit 1; }
-            jq -e '.id and .question and .type and .answer' "$file" > /dev/null || { echo "Missing required fields in: $file"; exit 1; }
+            jq -e '.questions[0] and .questions[0].id and .questions[0].question and .questions[0].type and .questions[0].answer' "$file" > /dev/null || { echo "Missing required fields in: $file"; exit 1; }
           done || true
 
       - name: Validate unique IDs

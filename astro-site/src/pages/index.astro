@@ -3,12 +3,19 @@
 import Navigation from '@components/Navigation';
 import LibraryView from '@components/LibraryView';
 import BuilderView from '@components/BuilderView';
+import PreviewView from '@components/PreviewView';
+import HistoryView from '@components/HistoryView';
+import { loadQuestionData } from '@/data/loader';
+import type { QuestionWithMeta } from '@/types/question';
 
-// TODO: Load question data here in build-time
-const questionData: Record<string, any>[] = []; // populated at build time
-const categories: string[] = ['geography', 'history']; // populated at build time
-const counts = { geography: 0, history: 0 };
-const totalQuestions = 0;
+const { questions, categories } = loadQuestionData();
+
+const counts: Record<string, number> = {};
+for (const cat of Object.keys(categories)) {
+  counts[cat] = categories[cat].length;
+}
+const totalQuestions = questions.length;
+const categoryNames = Object.keys(categories);
 
 let activeTab = 'library';
 
@@ -21,7 +28,7 @@ function handleTabChange(newTab: string) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Builder</title>
-    <link rel="stylesheet" href="/app.css" />
+    <link rel="stylesheet" href="/quiz/app.css" />
   </head>
   <body>
     <header style={{ padding: '8px 16px', borderBottom: '1px solid var(--clr-border)' }}>
@@ -32,10 +39,10 @@ function handleTabChange(newTab: string) {
     </header>
     <main style={{ padding: '16px', maxWidth: '1200px', margin: '0 auto' }} client:load>
       <div id="tab-content">
-        {activeTab === 'library' && <LibraryView questions={questionData} categories={categories} counts={counts} totalQuestions={totalQuestions} />}
-        {activeTab === 'builder' && <BuilderView questions={questionData} />}
+        {activeTab === 'library' && <LibraryView questions={questions} categories={categoryNames} counts={counts} totalQuestions={totalQuestions} />}
+        {activeTab === 'builder' && <BuilderView questions={questions as QuestionWithMeta[]} />}
         {activeTab === 'preview' && <p>Preview tab — coming soon</p>}
-        {activeTab === 'history' && <p>History tab — coming soon</p>}
+        {activeTab === 'history' && <HistoryView quizzes={[]} />}
       </div>
     </main>
   </body>
