@@ -10,12 +10,7 @@ import type { QuestionWithMeta } from '@/types/question';
 
 const { questions, categories } = loadQuestionData();
 
-const counts: Record<string, number> = {};
-for (const cat of Object.keys(categories)) {
-  counts[cat] = categories[cat].length;
-}
 const totalQuestions = questions.length;
-const categoryNames = Object.keys(categories);
 
 let activeTab = 'library';
 
@@ -39,7 +34,7 @@ function handleTabChange(newTab: string) {
     </header>
     <main style={{ padding: '16px', maxWidth: '1200px', margin: '0 auto' }} client:load>
       <div id="tab-content">
-        {activeTab === 'library' && <LibraryView questions={questions} categories={categoryNames} counts={counts} totalQuestions={totalQuestions} />}
+        {activeTab === 'library' && <LibraryView questions={questions} />}
         {activeTab === 'builder' && <BuilderView questions={questions as QuestionWithMeta[]} />}
         {activeTab === 'preview' && <p>Preview tab — coming soon</p>}
         {activeTab === 'history' && <HistoryView quizzes={[]} />}
