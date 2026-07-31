@@ -14,7 +14,7 @@
   --clr-success: #5a9e5a;
   --clr-warning: #f9a03f;
   --clr-error: #d45113;
-  --clr-muted: '#6a6a6a';
+  --clr-muted: #6a6a6a;
   --font-size-base: 16px;
   --font-size-sm: 14px;
   --font-size-lg: 20px;
@@ -127,4 +127,45 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Smooth transitions for buttons and cards */
+button, .card {
+  transition: background 0.15s ease, box-shadow 0.1s ease, transform 0.1s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Focus states for accessibility */
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--clr-primary);
+  outline-offset: 4px;
+}
+
+/* Animation for tab switching */
+#tab-content > section {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Improved card hover effects */
+div[style*="border"] {
+  transition: box-shadow 0.2s ease;
+}
+
+div[style*="border"]:hover {
+  box-shadow: var(--shadow);
 }
