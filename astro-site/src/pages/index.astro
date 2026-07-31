@@ -1,5 +1,20 @@
 ---
 // src/pages/index.astro
+import Navigation from '@components/Navigation';
+import LibraryView from '@components/LibraryView';
+import BuilderView from '@components/BuilderView';
+
+// TODO: Load question data here in build-time
+const questionData: Record<string, any>[] = []; // populated at build time
+const categories: string[] = ['geography', 'history']; // populated at build time
+const counts = { geography: 0, history: 0 };
+const totalQuestions = 0;
+
+let activeTab = 'library';
+
+function handleTabChange(newTab: string) {
+  activeTab = newTab;
+}
 ---
 <html lang="en">
   <head>
@@ -9,13 +24,24 @@
     <link rel="stylesheet" href="/app.css" />
   </head>
   <body>
-    <h1>Quiz Builder</h1>
-    <nav>
-      <a href="#library">Library</a>
-      <a href="#builder">Builder</a>
-      <a href="#preview">Preview</a>
-      <a href="#history">History</a>
-    </nav>
-    <slot />
+    <header style={{ padding: '8px 16px', borderBottom: '1px solid var(--clr-border)' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <h1 style={{ fontSize: '20px', color: 'var(--clr-primary)' }}>Quiz Builder</h1>
+        <Navigation onTabChange={handleTabChange} client:load />
+      </div>
+    </header>
+    <main style={{ padding: '16px', maxWidth: '1200px', margin: '0 auto' }} client:load>
+      <div id="tab-content">
+        {activeTab === 'library' && <LibraryView questions={questionData} categories={categories} counts={counts} totalQuestions={totalQuestions} />}
+        {activeTab === 'builder' && <BuilderView questions={questionData} />}
+        {activeTab === 'preview' && <p>Preview tab — coming soon</p>}
+        {activeTab === 'history' && <p>History tab — coming soon</p>}
+      </div>
+    </main>
   </body>
 </html>
+<style>
+  main {
+    min-height: calc(100vh - 80px);
+  }
+</style>
