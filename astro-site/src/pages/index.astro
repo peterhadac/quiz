@@ -1,22 +1,7 @@
 ---
-// src/pages/index.astro
-import Navigation from '@components/Navigation';
-import LibraryView from '@components/LibraryView';
-import BuilderView from '@components/BuilderView';
-import PreviewView from '@components/PreviewView';
-import HistoryView from '@components/HistoryView';
+import App from '@components/App';
 import { loadQuestionData } from '@/data/loader';
-import type { QuestionWithMeta } from '@/types/question';
-
-const { questions, categories } = loadQuestionData();
-
-const totalQuestions = questions.length;
-
-let activeTab = 'library';
-
-function handleTabChange(newTab: string) {
-  activeTab = newTab;
-}
+const { questions } = loadQuestionData();
 ---
 <html lang="en">
   <head>
@@ -26,24 +11,9 @@ function handleTabChange(newTab: string) {
     <link rel="stylesheet" href="/quiz/app.css" />
   </head>
   <body>
-    <header style={{ padding: '8px 16px', borderBottom: '1px solid var(--clr-border)' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h1 style={{ fontSize: '20px', color: 'var(--clr-primary)' }}>Quiz Builder</h1>
-        <Navigation onTabChange={handleTabChange} client:load />
-      </div>
-    </header>
-    <main style={{ padding: '16px', maxWidth: '1200px', margin: '0 auto' }} client:load>
-      <div id="tab-content">
-        {activeTab === 'library' && <LibraryView questions={questions} />}
-        {activeTab === 'builder' && <BuilderView questions={questions as QuestionWithMeta[]} />}
-        {activeTab === 'preview' && <p>Preview tab — coming soon</p>}
-        {activeTab === 'history' && <HistoryView quizzes={[]} />}
-      </div>
-    </main>
+    <App questions={questions} client:load />
   </body>
 </html>
 <style>
-  main {
-    min-height: calc(100vh - 80px);
-  }
+  body { margin: 0; }
 </style>
